@@ -1,0 +1,19 @@
+default:
+  FLASK_APP: todo_list
+  FLASK_ENV: development
+  FLASK_DEBUG: true
+  TOKEN_EXPIRATION_TIMEOUT: 86400  # 1 day in seconds
+  SECRET_KEY: secret
+  LOG_LEVEL: DEBUG
+  MAX_FETCH_NUMBER: 3
+
+  HTTP:
+    HOST: 127.0.0.1
+    PORT: 8000
+
+  DATABASE:
+    HOST: 127.0.0.1
+    PORT: 5432
+    USERNAME: todo_list_user
+    PASSWORD: "12345678"
+    DATABASE_NAME: todo_list_db

@@ -1,0 +1,2 @@
+class GQLParamValidationException(Exception):
+    pass
